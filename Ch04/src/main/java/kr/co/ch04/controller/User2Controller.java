@@ -19,10 +19,6 @@ public class User2Controller {
 	@PostMapping("/user2/register")
 	public String register(Model model, User2VO vo) {
 		
-		// model 객체를 이용해서 데이터 참조
-		model.addAttribute(vo);
-	
-		
 		return "/user2/result";
 	}
 }
