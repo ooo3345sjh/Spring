@@ -1,4 +1,4 @@
-package kr.co.prac.service;
+package kr.co.ch05.service;
 
 import java.util.List;
 
@@ -6,8 +6,8 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import kr.co.prac.dao.User2DAO;
-import kr.co.prac.vo.User2VO;
+import kr.co.ch05.dao.User2DAO;
+import kr.co.ch05.vo.UserVO;
 
 @Service
 public class User2Service {
@@ -15,19 +15,19 @@ public class User2Service {
 	@Autowired
 	private User2DAO dao;
 	
-	public void insertUser2(User2VO vo) {
+	public void insertUser2(UserVO vo) {
 		dao.insertUser2(vo);
 	}
 	
-	public User2VO selectUser2(String uid) {
+	public UserVO selectUser2(String uid) {
 		return dao.selectUser2(uid);
 	}
 	
-	public List<User2VO> selectUser2s() {
+	public List<UserVO> selectUser2s() {
 		return dao.selectUser2s();
 	}
 	
-	public void updateUser2(User2VO vo) {
+	public void updateUser2(UserVO vo) {
 		dao.updateUser2(vo);
 	}
 	

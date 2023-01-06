@@ -6,10 +6,10 @@
 	<insert id="insertUser2">
 		INSERT INTO `user2` VALUES (#{uid}, #{name}, #{hp}, #{age});
 	</insert>
-	<select id="selectUser2" resultType="kr.co.prac.vo.User2VO">
+	<select id="selectUser2" resultType="kr.co.ch05.vo.UserVO">
 		SELECT * FROM `user2` WHERE `uid`=#{uid}
 	</select>
-	<select id="selectUser2s" resultType="kr.co.prac.vo.User2VO">
+	<select id="selectUser2s" resultType="kr.co.ch05.vo.UserVO">
 		SELECT * FROM `user2`;
 	</select>
 	<delete id="updateUser2">

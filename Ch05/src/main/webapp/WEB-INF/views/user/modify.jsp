@@ -4,30 +4,30 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user2::modify</title>
+		<title>${type}::modify</title>
 	</head>
 <body>
-	<h3>user2 수정</h3>
-	<a href='<c:url value='/'/>'>Prac 메인</a>
-	<a href='<c:url value='/user2/list'/>'>user2 목록</a>
+	<h3>user 수정</h3>
+	<a href='<c:url value='/'/>'>Ch05 메인</a>
+	<a href='<c:url value='/user/list?type=${type}'/>'>${type} 목록</a>
 	
-	<form action='<c:url value='/user2/modify'/>' method="post">
+	<form action='<c:url value='/user/modify?type=${type}'/>' method="post">
 		<table border="1">
 			<tr>
 				<td>아이디</td>
-				<td><input type="text" name="uid" value="${user2VO.uid}"></td>
+				<td><input type="text" name="uid" value="${user.uid}"></td>
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td><input type="text" name="name" value="${user2VO.name}"></td>
+				<td><input type="text" name="name" value="${user.name}"></td>
 			</tr>
 			<tr>
 				<td>휴대폰</td>
-				<td><input type="text" name="hp" value="${user2VO.hp}"></td>
+				<td><input type="text" name="hp" value="${user.hp}"></td>
 			</tr>
 			<tr>
 				<td>나이</td>
-				<td><input type="number" name="age" value="${user2VO.age}"></td>
+				<td><input type="number" name="age" value="${user.age}"></td>
 			</tr>
 			<tr>
 				<td colspan="2" align="right"><input type="submit" value="수정"></td>

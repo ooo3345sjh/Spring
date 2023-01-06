@@ -4,14 +4,14 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user1::register</title>
+		<title>${type}::register</title>
 	</head>
 <body>
-	<h3>user1 등록</h3>
+	<h3>${type} 등록</h3>
 	<a href='<c:url value='/'/>'>Ch05 메인</a>
-	<a href='<c:url value='/user1/list'/>'>user1 목록</a>
+	<a href='<c:url value='/user/list?type=${type}'/>'>${type} 목록</a>
 	
-	<form action='<c:url value='/user1/register'/>' method="post">
+	<form action='<c:url value='/user/register?type=${type}'/>' method="post">
 		<table border="1">
 			<tr>
 				<td>아이디</td>
