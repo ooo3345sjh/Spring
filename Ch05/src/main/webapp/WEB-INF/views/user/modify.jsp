@@ -7,30 +7,20 @@
 		<title>${type}::modify</title>
 	</head>
 <body>
-	<h3>user 수정</h3>
+	<h3>${type} 수정</h3>
 	<a href='<c:url value='/'/>'>Ch05 메인</a>
 	<a href='<c:url value='/user/list?type=${type}'/>'>${type} 목록</a>
 	
 	<form action='<c:url value='/user/modify?type=${type}'/>' method="post">
 		<table border="1">
+			<c:forEach var="row" items="${columnKList}" begin="${type eq 'user4'? 1:0}" varStatus="loop">
+				<tr>
+					<td>${row}</td>
+					<td><input type="text" name="${columnList.get(loop.index)}" value="${rowList.get(0).get(loop.index)}"></td>
+				</tr>
+			</c:forEach>
 			<tr>
-				<td>아이디</td>
-				<td><input type="text" name="uid" value="${user.uid}"></td>
-			</tr>
-			<tr>
-				<td>이름</td>
-				<td><input type="text" name="name" value="${user.name}"></td>
-			</tr>
-			<tr>
-				<td>휴대폰</td>
-				<td><input type="text" name="hp" value="${user.hp}"></td>
-			</tr>
-			<tr>
-				<td>나이</td>
-				<td><input type="number" name="age" value="${user.age}"></td>
-			</tr>
-			<tr>
-				<td colspan="2" align="right"><input type="submit" value="수정"></td>
+				<td colspan="2" align="right"><input type="submit" value="등록"></td>
 			</tr>
 		</table>
 	</form>	

@@ -1,5 +1,8 @@
 package kr.co.ch05.vo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class UserVO {
 
 	private String uid;

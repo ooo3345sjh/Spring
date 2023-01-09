@@ -1,0 +1,11 @@
+user1ThTag=아이디/이름/휴대폰/나이
+user2ThTag=아이디/이름/휴대폰/나이
+user3ThTag=아이디/이름/휴대폰/나이
+user4ThTag=NO./이름/성별/나이/주소
+user5ThTag=아이디/이름/생년월일/성별/나이/주소/휴대폰
+
+user1TdTag=uid/name/hp/age
+user2TdTag=uid/name/hp/age
+user3TdTag=uid/name/hp/age
+user4TdTag=seq/name/gender/age/addr
+user5TdTag=uid/name/birth/gender/age/addr/hp

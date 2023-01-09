@@ -2,26 +2,29 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="user4">
+<mapper namespace="user5">
 	<insert id="insertUser">
-		INSERT INTO `user4`(`name`, `gender`, `age`, `addr`) VALUES (#{name}, #{gender}, #{age}, #{addr});
+		INSERT INTO `user5`(`uid`, `name`, `birth`, `gender`, `age`, `addr`, `hp`) 
+		VALUES (#{uid}, #{name}, #{birth}, #{gender}, #{age}, #{addr}, #{hp});
 	</insert>
 	<select id="selectUser" resultType="kr.co.ch05.vo.UserVO">
-		SELECT * FROM `user4` WHERE `seq`=#{seq};
+		SELECT * FROM `user5` WHERE `uid`=#{uid}
 	</select>
 	<select id="selectUsers" resultType="kr.co.ch05.vo.UserVO">
-		SELECT * FROM `user4`;
+		SELECT * FROM `user5`;
 	</select>
 	<delete id="updateUser">
-		UPDATE `user4` SET
+		UPDATE `user5` SET
 			`name`=#{name},
+			`birth`=#{birth},
 			`gender`=#{gender},
 			`age`=#{age},
-			`addr`=#{addr}
+			`addr`=#{addr},
+			`hp`=#{hp}
 		WHERE
-			`seq`=#{seq};
+			`uid`=#{uid};
 	</delete>
 	<update id="deleteUser">
-		DELETE FROM `user4` WHERE `seq`=#{seq};
+		DELETE FROM `user5` WHERE `uid`=#{uid};
 	</update>
 </mapper>

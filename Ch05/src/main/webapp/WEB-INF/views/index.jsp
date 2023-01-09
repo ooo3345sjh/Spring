@@ -14,6 +14,6 @@
 	<a href='<c:url value='/user/list?type=user3' />'>user3 목록</a>
 	<a href='<c:url value='/user/list?type=user4' />'>user4 목록</a>
 	<a href='<c:url value='/user/list?type=user5' />'>user5 목록</a>
-	<a href='<c:url value='/user/list?type=user6' />'>user6 목록</a>
+	<a href='<c:url value='/member/list' />'>member 목록</a>
 </body>
 </html>

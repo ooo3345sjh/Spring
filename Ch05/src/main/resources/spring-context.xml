@@ -17,7 +17,7 @@
 	<!-- 컴포넌트를 스프링 컨테이너로 등록하기 위한 태그선언 -->
     <context:component-scan base-package="kr.co.ch05"/>
 
-	<!-- 스프링 MVX 처리를 위한 어노테이션 태그선언 -->
+	<!-- 스프링 MVC 처리를 위한 어노테이션 태그선언 -->
 	<mvc:annotation-driven></mvc:annotation-driven>    
     
     <!-- ViewResolver 등록 -->
@@ -29,7 +29,7 @@
 	<!-- 데이터베이스(커넥션풀) 등록 설정 -->
 	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
     	<property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
-    	<property name="url" value="jdbc:mysql://127.0.0.1:3306/java2db" />
+    	<property name="url" value="jdbc:mysql://127.0.0.1:3307/java2db" />
     	<property name="username" value="root" />
     	<property name="password" value="1234" />
 	</bean>

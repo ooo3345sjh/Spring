@@ -13,22 +13,31 @@
 	
 	<form action='<c:url value='/user/register?type=${type}'/>' method="post">
 		<table border="1">
-			<tr>
-				<td>아이디</td>
-				<td><input type="text" name="uid"></td>
-			</tr>
-			<tr>
-				<td>이름</td>
-				<td><input type="text" name="name"></td>
-			</tr>
-			<tr>
-				<td>휴대폰</td>
-				<td><input type="text" name="hp"></td>
-			</tr>
-			<tr>
-				<td>나이</td>
-				<td><input type="number" name="age"></td>
-			</tr>
+			<c:forEach var="row" items="${columnKList}" begin="${type eq 'user4' ? 1:0}" varStatus="loop">
+				<tr>
+					<td>${row}</td>
+					<c:choose>
+						<c:when test="${row eq '성별'}">
+							<td>
+								<label>
+									 남<input type="checkbox" name="gender" value="1">
+								</label>
+								<label>
+									 여<input type="checkbox" name="gender" value="2">
+								</label>
+							</td>
+						</c:when>
+						
+						<c:when test="${row eq '생년월일'}">
+							<td><input type="date" name="birth"></td>
+						</c:when>
+						
+						<c:otherwise>
+							<td><input type="text" name="${columnList.get(loop.index)}"></td>
+						</c:otherwise>
+					</c:choose>
+				</tr>
+			</c:forEach>
 			<tr>
 				<td colspan="2" align="right"><input type="submit" value="등록"></td>
 			</tr>
