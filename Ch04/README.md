@@ -23,7 +23,7 @@
 - Spring은 웹 개발을 위한 MVC 라이브러리(spring-webmvc)를 제공
 - Spring MVC 주요 컴포넌트 정리
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bf4396b7-8111-45c4-8347-cbf3a0755927/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235739488-8b19ae5d-06c0-49a5-a11b-9a462d6566fd.png)
 
 ## 4. Spring MVC 실습
 
