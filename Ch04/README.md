@@ -24,7 +24,3 @@
 - Spring MVC 주요 컴포넌트 정리
 
 ![Untitled](https://user-images.githubusercontent.com/111489860/235739488-8b19ae5d-06c0-49a5-a11b-9a462d6566fd.png)
-
-## 4. Spring MVC 실습
-
-- Spring 프로젝트 ch04 참고 (스프링 환경설정 : Dispatcher Servlet, view Resolver …)
