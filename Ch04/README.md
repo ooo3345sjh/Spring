@@ -7,7 +7,7 @@
 - Model : 애플리케이션의 데이터를 가공 처리하기 위한 컴포넌트(예: Dao, Service)
 - View : 모델이 처리한 결과를 사용자에게 출력할 화면을 처리하는 컴포넌트(예: HTML, Jsp)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3a3f4c12-80dc-4c69-8446-31fb9c1fab94/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235739387-ab1ac581-3fa3-4d2c-bf59-be68b07013bc.png)
 
 ## 2. Spring MVC
 
@@ -16,7 +16,7 @@
 - 각각의 애플리케이션 Controller는 클라이언트에게 보낼 뷰를 선택해서 최종 결과를 생성하는 작업
 - Spring 은 Dispatcher Servlet을 Front Controller로 사용
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/71b5267b-2318-4cde-9044-80ff6342caf8/Untitled.png)
+![Untitled](https://user-images.githubusercontent.com/111489860/235739451-9bac044f-90a3-4b24-a65c-2bc2bf0dea25.png)
 
 ## 3. Spring MVC 구성요소
 
